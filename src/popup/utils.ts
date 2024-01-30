@@ -38,7 +38,8 @@ export async function addIframe(size: string, zIndex: number) {
   const CURRENT_URL = window.location.href;
   const iframe = document.createElement('iframe');
   iframe.addEventListener('load', async () => {
-    const iframeDocument = iframe.contentDocument || iframe.contentWindow?.document;
+    const iframeDocument =
+      iframe.contentDocument || iframe.contentWindow?.document;
     if (iframeDocument) {
       removeEverythingExceptIframe(iframeDocument);
     }

@@ -1,4 +1,9 @@
-import { addIframe, removeEverythingExceptIframe, setFrameSize, wait } from './utils';
+import {
+  addIframe,
+  removeEverythingExceptIframe,
+  setFrameSize,
+  wait,
+} from './utils';
 
 function clickElementWithTitle(doc: Document, title: string) {
   const button = doc.querySelector('[title="' + title + '"]');

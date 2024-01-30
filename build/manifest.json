@@ -60,8 +60,5 @@
     "scripting",
     "tabs",
     "activeTab"
-  ],
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
-  }
+  ]
 }

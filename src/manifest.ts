@@ -1,5 +1,5 @@
-import { defineManifest } from '@crxjs/vite-plugin'
-import packageData from '../package.json'
+import { defineManifest } from '@crxjs/vite-plugin';
+import packageData from '../package.json';
 
 export default defineManifest({
   name: packageData.name,
@@ -33,12 +33,14 @@ export default defineManifest({
   },
   web_accessible_resources: [
     {
-      resources: ['img/logo-16.png', 'img/logo-34.png', 'img/logo-48.png', 'img/logo-128.png'],
+      resources: [
+        'img/logo-16.png',
+        'img/logo-34.png',
+        'img/logo-48.png',
+        'img/logo-128.png',
+      ],
       matches: [],
     },
   ],
   permissions: ['sidePanel', 'storage', 'scripting', 'tabs', 'activeTab'],
-  chrome_url_overrides: {
-    newtab: 'newtab.html',
-  },
-})
+});
